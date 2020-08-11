@@ -68,16 +68,6 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   # }
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-#holiday_hash.each do |holiday, supply|
- # supply.each do |attribute| #, value|
-  #  if attribute == :spring 
-   #   [:memorial_day] << "Grill"
-    #elsif attribute == :memorial_day
-     # [:memorial_day] << "Table Cloth"
-    #end
-   #end
- #end
-#return holiday_hash
   
   holiday_hash[:spring][:memorial_day] << supply
   return holiday_hash

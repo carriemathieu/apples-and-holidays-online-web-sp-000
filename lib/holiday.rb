@@ -78,14 +78,8 @@ def add_supply_to_memorial_day(holiday_hash, supply)
    #end
  #end
 #return holiday_hash
-  count = 0
-  while count <= 2
-      holiday_hash[:spring][:memorial_day][1] = supply
-      puts holiday_hash[:spring]
-      count +=1
-      return holiday_hash
-    end
-  end
+  
+  holiday_hash[:spring][:memorial_day] << supply
 end
 
 

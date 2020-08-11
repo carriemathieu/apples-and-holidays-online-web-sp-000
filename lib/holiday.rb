@@ -83,11 +83,6 @@ def add_supply_to_memorial_day(holiday_hash, supply)
       holiday_hash[:spring][:memorial_day][1] = supply
       puts holiday_hash[:spring]
       count +=1
-    elsif count == 1
-      holiday_hash[:spring][:memorial_day][1] = "Table Cloth"
-      puts holiday_hash[:spring]
-      count += 1
-    else
       return holiday_hash
     end
   end

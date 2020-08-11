@@ -80,6 +80,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 #return holiday_hash
   
   holiday_hash[:spring][:memorial_day] << supply
+  return holiday_hash
 end
 
 

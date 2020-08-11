@@ -114,14 +114,15 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.each do |day, supply|
         array_of_capital_holidays = []
         capital_holiday = day.to_s.split("_")
+
         capital_holiday.each do |word|
-          array_of_capital_holidays << capital_holiday.capitalize
+          array_of_capital_holidays << word.capitalize
         end
-        "  #{day.join(" ")}: #{supply.join(", ")}"
+        final_hol = array_of_capital_holidays.join(" ")
+        puts "  #{final_hol}: #{supply.join(", ")}"
       end
     end
   end
-end
 
 def all_holidays_with_bbq(holiday_hash)
   #   :winter => {

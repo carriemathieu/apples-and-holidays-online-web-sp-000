@@ -81,7 +81,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   count = 0
   while count <= 2
     if count == 0
-      holiday_hash[:spring][:memorial_day][1] = "Grill"
+      holiday_hash[:spring][:memorial_day][1] = supply
       puts holiday_hash[:spring]
       count +=1
     elsif count == 1

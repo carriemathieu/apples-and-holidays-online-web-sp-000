@@ -79,17 +79,15 @@ def add_supply_to_memorial_day(holiday_hash, supply)
  #end
 #return holiday_hash
   count = 0
-  holiday_hash.each do |holiday, data|
-    while count <= 2
-      if count == 0
-        holiday_hash[:spring][:memorial_day][1] = "Grill"
-        puts holiday_hash[:spring]
-        count +=1
-      elsif count == 1
-        holiday_hash[:spring][:memorial_day][1] = "Table Cloth"
-        puts holiday_hash[:spring]
-        count += 1
-      end
+  while count <= 2
+    if count == 0
+      holiday_hash[:spring][:memorial_day][1] = "Grill"
+      puts holiday_hash[:spring]
+      count +=1
+    elsif count == 1
+      holiday_hash[:spring][:memorial_day][1] = "Table Cloth"
+      puts holiday_hash[:spring]
+      count += 1
     end
   end
   return holiday_hash

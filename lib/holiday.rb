@@ -90,6 +90,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
       count += 1
     else
       return holiday_hash
+    end
   end
 end
 

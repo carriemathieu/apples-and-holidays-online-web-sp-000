@@ -85,7 +85,6 @@ end
 
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-   {
   #   :winter => {
   #     :christmas => ["Lights", "Wreath"],
   #     :new_years => ["Party Hats"]
